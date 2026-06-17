@@ -49,7 +49,7 @@ export default function LoginPage() {
               A
             </div>
             <span className="text-lg font-bold tracking-tight bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent">
-              Antigravity Board
+              SketchSync
             </span>
           </Link>
           <h2 className="text-2xl font-bold text-white tracking-tight">Welcome back</h2>

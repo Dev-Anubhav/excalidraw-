@@ -1,4 +1,4 @@
-# Antigravity Board 🎨
+# SketchSync 🎨
 
 A production-grade, real-time collaborative whiteboard application inspired by Excalidraw and FigJam. Built on a raw HTML5 Canvas API drawing engine with pixel-perfect cursor synchronization, operation-based history rollback, and automatic workspace persistence.
 
@@ -6,7 +6,7 @@ A production-grade, real-time collaborative whiteboard application inspired by E
 
 ## Technical Architecture Overview
 
-Antigravity Board is organized as a unified full-stack monorepo:
+SketchSync is organized as a unified full-stack monorepo:
 
 ```
 ├── apps/

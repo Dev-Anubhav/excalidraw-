@@ -2,7 +2,7 @@ import './globals.css';
 import Providers from './providers';
 
 export const metadata = {
-  title: 'Antigravity Board | Real-Time Collaborative Whiteboard',
+  title: 'SketchSync | Real-Time Collaborative Whiteboard',
   description: 'A high-performance, real-time collaborative drawing whiteboard application built for designers and developers.',
 };
 

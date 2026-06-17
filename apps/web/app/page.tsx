@@ -17,7 +17,7 @@ export default function LandingPage() {
             A
           </div>
           <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent">
-            Antigravity Board
+            SketchSync
           </span>
         </div>
         <div className="flex items-center gap-4">
@@ -117,7 +117,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="border-t border-zinc-900 py-8 text-center text-sm text-zinc-600">
-        <p>&copy; {new Date().getFullYear()} Antigravity Board. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} SketchSync. All rights reserved.</p>
       </footer>
     </div>
   );
