@@ -80,7 +80,7 @@ export default function RoomPage() {
     handleMouseUp,
     handleMouseLeave,
     draw,
-  } = useCanvas(canvasRef, textInputRef, setTextInputState);
+  } = useCanvas(roomId, me?.id || '', canvasRef, textInputRef, setTextInputState);
 
   // Auto-focus text editor textarea
   useEffect(() => {

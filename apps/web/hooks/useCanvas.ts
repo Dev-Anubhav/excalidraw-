@@ -26,6 +26,8 @@ const useThrottle = (callback: (...args: any[]) => void, delay: number) => {
 };
 
 export const useCanvas = (
+  roomId: string,
+  userId: string,
   canvasRef: React.RefObject<HTMLCanvasElement | null>,
   textInputRef: React.RefObject<HTMLTextAreaElement | null>,
   setTextInputState: (state: { show: boolean; x: number; y: number; text: string; elementId?: string }) => void
@@ -233,7 +235,7 @@ export const useCanvas = (
 
       const newElement: WhiteboardElement = {
         id: elId,
-        roomId: '', // Set by room logic
+        roomId, // Set by room logic
         type: canvasState.activeTool,
         x: worldPoint.x,
         y: worldPoint.y,
@@ -245,7 +247,7 @@ export const useCanvas = (
         opacity: canvasState.opacity,
         rotation: 0,
         zIndex: maxZ + 1,
-        createdBy: '', // Filled in by caller
+        createdBy: userId, // Filled in by caller
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
       };
