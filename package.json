@@ -1,0 +1,22 @@
+{
+  "name": "collaborative-whiteboard-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "dev": "concurrently --kill-others \"pnpm --filter @whiteboard/server dev\" \"pnpm --filter @whiteboard/web dev\"",
+    "build": "pnpm --filter @whiteboard/types build && pnpm --filter @whiteboard/server build && pnpm --filter @whiteboard/web build",
+    "start": "concurrently \"pnpm --filter @whiteboard/server start\" \"pnpm --filter @whiteboard/web start\"",
+    "lint": "pnpm -r lint",
+    "db:generate": "pnpm --filter @whiteboard/server db:generate",
+    "db:push": "pnpm --filter @whiteboard/server db:push",
+    "db:studio": "pnpm --filter @whiteboard/server db:studio"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "^5.4.5"
+  }
+}
